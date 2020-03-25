@@ -5,28 +5,26 @@ const buttonConst = document.querySelectorAll('.classButton');
 
 function getTijd() {
   return Date.now();
-}  let val0 =val1= val2=val3=val4=val5 = getTijd();
+}  //let val0 =val1= val2=val3=val4=val5 = getTijd();
 //Geef alle buttons een nummer zodat je ze individueel kunt aanroepen
 for(let i=0; i< buttonConst.length; i++){
   //geef alle buttons kleur groen
-  buttonConst[i].style.backgroundColor = "green";
+  buttonConst[i].style.background = "green";
 
   //wanneer je klikt op 'een' button, wanneer achtergrond groen is, maak rood en vice-versa
-  buttonConst[i].addEventListener('click', Knoppen)
-}
+  buttonConst[i].addEventListener('click', function(){
 
-function Knoppen(){
-      if(this.buttonConst.style.backgroundColor != "red")
+      if(buttonConst[i].style.background != "red")
         {
-          this.buttonConst.style.backgroundColor = "red";
+          buttonConst[i].style.background = "red";
         }
    else {
-          this.buttonConst.style.backgroundColor = "green";
-        }return getTijd();
+          buttonConst[i].style.background = "green";
+        }
       //  window.alert(buttonConst[i].value);
       //document.body.style.backgroundColor = "red";
-    }
-
+    });
+}
 
 /*
 Lock = 1 minuut
