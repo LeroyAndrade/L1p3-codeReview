@@ -1,3 +1,13 @@
+
+
+function OBJtijd(evl,vari,outp){
+let newForm = this;
+newForm.evl =getTijd();
+newForm.var =vari;
+newForm.outp =outp;
+}
+let abc = new OBJtijd('','','');
+console.log(abc);
 let begin;
 mijnButtonStart.addEventListener('click', ()=>{
 // let datum = Date.now();
