@@ -1,0 +1,15 @@
+body {
+  background-color: green;
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: blue;
+  }
+
+  header{
+    display:grid;
+    grid-template-columns: 1fr;
+  }
+}
